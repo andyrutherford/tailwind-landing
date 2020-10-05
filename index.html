@@ -16,6 +16,12 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
     <title>Hometown Cafe</title>
@@ -33,7 +39,7 @@
         >
           <a
             class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
-            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+            href="#!"
             >Hometown Cafe</a
           ><button
             class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -81,15 +87,6 @@
                 ><span class="lg:hidden inline-block ml-2">Profile</span></a
               >
             </li>
-            <li class="flex items-center">
-              <button
-                class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-                type="button"
-                style="transition: all 0.15s ease 0s"
-              >
-                <i class="fas fa-arrow-alt-circle-down"></i> Download
-              </button>
-            </li>
           </ul>
         </div>
       </div>
@@ -111,7 +108,7 @@
           ></span>
         </div>
 
-        <div class="container relative mx-auto">
+        <div class="container relative mx-auto" data-aos="fade-in">
           <div class="items-center flex flex-wrap">
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div>
@@ -176,14 +173,20 @@
         </div>
         <div class="container mx-auto px-4">
           <div class="items-center flex flex-wrap">
-            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <div
+              class="w-full md:w-4/12 ml-auto mr-auto px-4"
+              data-aos="fade-right"
+            >
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
                 src="/assets/img/coffee.jpg"
               />
             </div>
-            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+            <div
+              class="w-full md:w-5/12 ml-auto mr-auto px-4"
+              data-aos="fade-left"
+            >
               <div class="md:pr-12">
                 <small class="text-orange-500">About our cafe</small>
                 <h3 class="text-4xl font-semibold">We know coffee</h3>
@@ -260,13 +263,18 @@
           <!-- Team card wrapper -->
           <div class="flex flex-wrap">
             <!-- Card 1 -->
-            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+            <div
+              class="w-full md:w-4/12 lg:mb-0 mb-12 px-4"
+              data-aos="flip-right"
+            >
               <div class="px-6">
                 <img
                   alt="..."
                   src="https://source.unsplash.com/random/200x200?man,cafe"
                   class="shadow-lg rounded max-w-full mx-auto"
                   style="max-width: 200px"
+                  height="200"
+                  width="200"
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Jack Johnson</h5>
@@ -277,13 +285,18 @@
               </div>
             </div>
             <!-- Card 2 -->
-            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+            <div
+              class="w-full md:w-4/12 lg:mb-0 mb-12 px-4"
+              data-aos="flip-right"
+            >
               <div class="px-6">
                 <img
                   alt="..."
                   src="https://source.unsplash.com/random/200x200?woman"
                   class="shadow-lg rounded max-w-full mx-auto"
                   style="max-width: 200px"
+                  height="200"
+                  width="200"
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Erica Hyning</h5>
@@ -294,13 +307,18 @@
               </div>
             </div>
             <!-- Card 3 -->
-            <div class="w-full md:w-4/12 lg:mb-0 mb-12 px-4">
+            <div
+              class="w-full md:w-4/12 lg:mb-0 mb-12 px-4"
+              data-aos="flip-right"
+            >
               <div class="px-6">
                 <img
                   alt="..."
                   src="https://source.unsplash.com/random/200x200?cat,sleep,inside"
                   class="shadow-lg rounded max-w-full mx-auto"
                   style="max-width: 200px"
+                  height="200"
+                  width="200"
                 />
                 <div class="pt-6 text-center">
                   <h5 class="text-xl font-bold">Cliff</h5>
@@ -354,6 +372,7 @@
             <div class="w-full lg:w-6/12 px-4">
               <div
                 class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
+                data-aos="fade-up-right"
               >
                 <div class="flex-auto p-5 lg:p-10 bg-orange-500 text-white">
                   <h4 class="text-2xl font-semibold">Want to work with us?</h4>
@@ -480,5 +499,17 @@
       document.getElementById(collapseID).classList.toggle('hidden');
       document.getElementById(collapseID).classList.toggle('block');
     }
+  </script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1200,
+      once: true,
+    });
   </script>
 </html>
